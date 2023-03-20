@@ -1,59 +1,85 @@
 /*General*/
-h4{
-    color: orange;
-}
 body {
-    font: normal 18px 'Open Sans', sans-serif;
-    background: #fafafa;
-    color: #333;
+  font-family: 'Poppins', sans-serif;
+    background: #090909;
+    color: #fafafa;
     vertical-align: baseline;
+    margin: 0;
 }
 
 /*Header*/
-header {
-    margin: 0;
-    background: #fafafad6;
-}
-nav {
-    max-width: 800px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-nav a {
-    flex-grow: 1;
-    text-align: center;
-    padding: 1em;
-    position: relative;
+header{
+  display: block;
+  margin-bottom: 30px;
 }
 a {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
-
-nav a:hover{
-color: orange;
+nav {
+	color: #fafafa;
+  background-color: #090909;
+	display: flex;
+	align-items: center;
+	gap: 25px;
 }
-
-nav a.active{
-    color:orange;
-    font-weight: bold;
+nav a{
+  margin-left: 50px;
 }
-
-nav a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right:0;
-    height: 2px;
-    transform: scaleX(0);
-    background: orange;
-    transition: 0.7s transform cubic-bezier(0.06, 0.9, 0.28, 1);
+ul {
+	list-style: none;
+	display: flex;
+	gap: 25px;
 }
-nav a:hover::after{
-    transform: scaleX(1)
+.link {
+	position: relative;
+	display: inline-block;
 }
+.link::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #fafafa;
+	border-radius: 4px;
+	scale: 0 1;
+	transform-origin: right;
+	transition: scale 0.25s;
+}
+.link:hover::before {
+	scale: 1;
+	transform-origin: left;
+}
+.buy-me-a-coffee{
+  
+  margin: 10px;
+}
+button {
+  flex: right;
+  background-color: #444141;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+ }
+ 
+ button:hover {
+  background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
+  animation: slidernbw 5s linear infinite;
+  color: #000;
+ }
+ 
+ @keyframes slidernbw {
+  to {
+   background-position: 20vw;
+  }
+ }
 
 
 
@@ -70,7 +96,7 @@ nav a:hover::after{
     display: flex;
 }
 .location:hover{
-  color: #ffa31a;
+  background-color: #2b3137;
 }
 .column-left {
   flex: 1;
@@ -178,6 +204,7 @@ article {
 }
 .card__body--back {
   font-size: 60px;
+  color: #000;
 	background-image: linear-gradient(
 		-20deg, #ffd801 0%,
 		 #ffa722 100%);
@@ -194,7 +221,7 @@ table {
   margin: 0 auto;
 }
 td, th {
-  border: 1px solid #dddddd;
+  border: none;
   text-align: left;
   padding: 8px;
 }
@@ -205,7 +232,7 @@ td, th {
   width: 15 px;
 }
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #2f2f2f;
 }
 table img {
   max-width: 100%;
@@ -214,7 +241,6 @@ table img {
 }
 table .music-link:hover{
   color: #1db954;
-  background-color: #212121;
   transition: color 0.3s ease;
 }
 
@@ -226,10 +252,10 @@ details {
 	cursor: pointer;
 }
 .quessions{
-  margin-top: 90px;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 details:not(:last-child) {
 	margin-bottom: 10px;
@@ -245,8 +271,8 @@ details[open] summary {
 
 /*Footer*/
 footer {
-  background-color: #fff;
-  color: #333;
+  background-color: #090909;
+  color: #fafafa;
   text-align: center;
   position: absolute;
   width: 100%;
