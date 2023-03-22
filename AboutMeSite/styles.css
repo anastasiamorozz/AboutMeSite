@@ -9,7 +9,8 @@ body {
 
 /*Header*/
 header{
-  display: block;
+  display: flex;
+  height: 80px;
   margin-bottom: 30px;
 }
 a {
@@ -17,6 +18,7 @@ a {
 	color: inherit;
 }
 nav {
+  width: 100%;
 	color: #fafafa;
   background-color: #090909;
 	display: flex;
@@ -52,12 +54,12 @@ ul {
 	scale: 1;
 	transform-origin: left;
 }
-.buy-me-a-coffee{
-  
-  margin: 10px;
+header .buy-me-a-coffee{
+  position: absolute;
+  align-items: center;
+  right: 50px;
 }
 button {
-  flex: right;
   background-color: #444141;
   border-radius: 4px;
   color: #fff;
@@ -68,13 +70,11 @@ button {
   letter-spacing: 1px;
   border: none;
  }
- 
  button:hover {
   background-image: linear-gradient(90deg, #53cbef 0%, #dcc66c 50%, #ffa3b6 75%, #53cbef 100%);
   animation: slidernbw 5s linear infinite;
   color: #000;
  }
- 
  @keyframes slidernbw {
   to {
    background-position: 20vw;
@@ -277,6 +277,70 @@ footer {
   position: absolute;
   width: 100%;
 }
+
+/*Form page*/
+.card-container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.card-bottom {
+  width: 400px;
+  height: 520px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all .3s;
+ }
+ .card-form {
+  width: 400px;
+  height: 520px;
+  border-radius: 20px; 
+  background-color: #1a1a1a;
+  
+ }
+ .card-form:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+ }
+ .card-bottom:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+ }
+ .write-me-main{
+  margin: 50px 10px 10px 10px;
+ }
+ .write-me-description{
+  margin: 10px;
+ }
+ .input-group{
+  margin: 30px 20px 20px 20px;
+ }
+ .input {
+  width: 300px;
+  
+  height: 44px;
+  background-color: rgb(48, 48, 48);
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s, background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+.input:hover, .input:focus, .input-group:hover .input {
+  outline: none;
+  border-color: #fffffff9;
+}
+.input-group:hover .label, .input:focus {
+  color: #fffffff9;
+}
+
 
 /*Video page*/
 .video-container {

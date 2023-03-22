@@ -5,60 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Форма</title>
-    
+    <script src="https://kit.fontawesome.com/831b8bf6ff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Головна</a>
-            <a href="/formpage.html">Форма</a>
-            <a href="/videopage.html">Круте відео</a>
-        </nav>
-    </header>
-
-    <form>
-        <div class="container">
-            <div class="block">
-                <p><strong>ПІБ:</strong></p>
-            <p><input type="text" name="fio" minlength="3" maxlength="50"></p>
-                
-            <p><strong>Які фільми ви любите дивитися?</strong></p>
-            <input type="checkbox" name="genre" value="fantasy"> Фантастика<br>
-            <input type="checkbox" name="genre" value="action"> Боєвики<br>
-            <input type="checkbox" name="genre" value="adventure"> Пригодницькі<br>
-            <input type="checkbox" name="genre" value="romance"> Мелодрами<br>
-            <input type="checkbox" name="genre" value="documentary"> Документальні<br>
-                
-                
-            <p><strong>Ви:</strong>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Чоловік</label>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Жінка</label>
-            </p>
-        
-        
-            <p><strong>В яку країну ви хотіли в поїхати?</strong></p>
-            <select id="country" name="country">
-                <option value="ukraine">Україна</option>
-                <option value="italy">Італія</option>
-                <option value="usa">США</option>
-                <option value="china">Китай</option>
-                <option value="germany">Німеччина</option>
-            </select>
-        
-            <p><strong>Ваш е-мейл?</strong></p>
-            <div>
-                <span class="email-icon">@</span>
-                <input type="email" id="email" name="email">
-            </div>
-        
-            <p><button type="submit">Відправити анкету</button>
-            <button type="button">Відміна</button></p>
-            </div>
+    <!-- Header -->
+  <header>
+    <nav>
+        <a href="/index.html">
+            <i class="fa-solid fa-user"></i>
+        </a>
+        <ul>
+            <li>
+                <a href="/formpage.html" class="link">Form</a>
+            </li>
+            <li>
+                <a href="/videopage.html" class="link">Video</a>
+            </li>
+        </ul>
+        <div class="buy-me-a-coffee">
+            <button>Buy me a coffee</button>
         </div>
-      </form>
+    </nav>
+        
+  </header>
+
+  <!--Cards-->
+  <div class="card-container">
+    <div class="card-bottom">
+        <div class="card-form">
+            <h1 class="write-me-main">Write me a message</h1>
+            <h5 class="write-me-description">It's a simple form for educational purposes that doesn't really do anything, but at least it looks cool :)</h5>
+            <div class="input-group">
+                <input autocomplete="off" class="input" type="email" placeholder="Email">
+            </div>
+            
+
+
+
+
+                    <!--<div class="block">
+                        <input type="text" placeholder="First name" name="text" class="input">
+                        
+                    <p><strong>Які фільми ви любите дивитися?</strong></p>
+                    <input type="checkbox" name="genre" value="fantasy"> Фантастика<br>
+                    <input type="checkbox" name="genre" value="action"> Боєвики<br>
+                    <input type="checkbox" name="genre" value="adventure"> Пригодницькі<br>
+                    <input type="checkbox" name="genre" value="romance"> Мелодрами<br>
+                    <input type="checkbox" name="genre" value="documentary"> Документальні<br>
+                        
+                        
+                    <p><strong>Ви:</strong>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Чоловік</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Жінка</label>
+                    </p>
+                
+                
+                    <p><strong>В яку країну ви хотіли в поїхати?</strong></p>
+                    <select id="country" name="country">
+                        <option value="ukraine">Україна</option>
+                        <option value="italy">Італія</option>
+                        <option value="usa">США</option>
+                        <option value="china">Китай</option>
+                        <option value="germany">Німеччина</option>
+                    </select>
+                
+                    <p><strong>Ваш е-мейл?</strong></p>
+                    <div>
+                        <span class="email-icon">@</span>
+                        <input type="email" id="email" name="email">
+                    </div>
+                
+                    <p><button type="submit">Відправити анкету</button>
+                    <button type="button">Відміна</button></p>
+                    </div>
+                </div>-->
+            
+        </div>
+      </div>
+  </div>
+  
+    
       
 </body>
 </html>
