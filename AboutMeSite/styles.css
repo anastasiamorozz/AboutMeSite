@@ -6,6 +6,11 @@ body {
     vertical-align: baseline;
     margin: 0;
 }
+@media (max-width: 700px){
+  .profile-content .container, .cards {
+    display: block;
+  }
+}
 
 /*Header*/
 header{
@@ -23,15 +28,15 @@ nav {
   background-color: #090909;
 	display: flex;
 	align-items: center;
-	gap: 25px;
+	gap: 2%;
 }
 nav a{
-  margin-left: 50px;
+  margin-left: 5%;
 }
 ul {
 	list-style: none;
 	display: flex;
-	gap: 25px;
+	gap: 30%;
 }
 .link {
 	position: relative;
@@ -57,7 +62,7 @@ ul {
 header .buy-me-a-coffee{
   position: absolute;
   align-items: center;
-  right: 50px;
+  right: 5%;
 }
 button {
   background-color: #444141;
@@ -172,7 +177,6 @@ article {
 	width: 170px;
 	height: 250px;
 	perspective: 800px;
-  display: inline;
 }
 .card__photo{
   object-fit: cover;
@@ -182,6 +186,7 @@ article {
 }
 .card__inner {
 	position: relative;
+  width: 170px;
 	height: 250px;
 	transform-style: preserve-3d;
 	transition: transform 0.3s;
@@ -324,7 +329,6 @@ footer {
  }
  .input {
   width: 300px;
-  
   height: 44px;
   background-color: rgb(48, 48, 48);
   border-radius: .5rem;
@@ -340,7 +344,51 @@ footer {
 .input-group:hover .label, .input:focus {
   color: #fffffff9;
 }
+.radio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px 10px 10px;
+  gap: 15px;
+}
+textarea{
+  width: 300px;
+  background-color: rgb(48, 48, 48);
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  color: #7b7b7bf9; 
+  margin: 10px 20px 20px 20px;
+}
 
+/*Buy-me-a-coffee-page*/
+.buy-text{
+  display: flex ;
+  justify-content: center;
+}
+.buy--text{
+  max-width: 600px;
+}
+.cool-text{
+  color: #dcc66c;
+  animation: slidernbw 5s linear infinite;
+}
+.gif{
+  height: 500px;
+}
+.donate{
+  display: flex;
+  text-align: center;
+  width: 360px;
+  height: 84px;
+  background-color: rgb(48, 48, 48);
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 1px solid #fffffff9;
+  font-size: 30px;
+  font-family: monospace;
+}
 
 /*Video page*/
 .video-container {
