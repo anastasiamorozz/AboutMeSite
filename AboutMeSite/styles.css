@@ -7,8 +7,31 @@ body {
     margin: 0;
 }
 @media (max-width: 700px){
-  .profile-content .container, .cards {
+  .profile-content .container, .buy-text {
     display: block;
+    margin: 15px;
+  }
+  .cards{
+    display: grid;
+    grid-gap: 1rem;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .video--{
+    width: 100px;
+    visibility: hidden;
+  }
+}
+@media (min-width: 900px) {
+  .cards{
+    display:flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  }
+  .buy-text{
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -166,12 +189,6 @@ button {
 }
 article {
   margin: 10px;
-}
-.cards{
-  display:flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 .card {
 	width: 170px;
@@ -344,13 +361,6 @@ footer {
 .input-group:hover .label, .input:focus {
   color: #fffffff9;
 }
-.radio{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px 10px 10px 10px;
-  gap: 15px;
-}
 textarea{
   width: 300px;
   background-color: rgb(48, 48, 48);
@@ -363,10 +373,6 @@ textarea{
 }
 
 /*Buy-me-a-coffee-page*/
-.buy-text{
-  display: flex ;
-  justify-content: center;
-}
 .buy--text{
   max-width: 600px;
 }
@@ -392,5 +398,6 @@ textarea{
 
 /*Video page*/
 .video-container {
-  margin: auto;
+  text-align:center; 
+  margin: 30px;
 }
